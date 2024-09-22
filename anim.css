@@ -1,0 +1,258 @@
+body {
+    background-size: 100rem 45rem;
+    background-repeat: no-repeat;
+    justify-content: center;
+    justify-items: center;
+    font-family: Trattatello, fantasy;
+}
+
+h2 {
+    color: black;
+    animation: tex 1s linear infinite;
+    justify-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@keyframes tex {
+
+    50% {
+        transform: scale(1);
+        transform: translateY(45%);
+    }
+}
+
+.p1 {
+    animation: jump 1s linear;
+    position: relative;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    50% {
+        bottom: 100px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.p1 {
+    width: 15%;
+    font-size: 3rem;
+    left: 47%;
+    top: 50%;
+    transform: translate(-50%, -100%);
+    color: wheat;
+}
+
+.p1:hover {
+    color: aliceblue;
+}
+
+.shap {
+    /* animation: shap 2s linear infinite; */
+    border-radius: 100px;
+    color: whitesmoke;
+}
+
+.shap1 {
+    width: 35%;
+}
+
+.imag:hover {
+    width: 50%;
+    animation: shap 2s linear infinite;
+}
+
+@keyframes shap {
+    100% {
+        transform: scale(0.1);
+    }
+}
+
+nav {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.ne {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    position: absolute;
+    left: 39%;
+    top: 45%;
+}
+
+.em {
+    position: relative;
+    top: -15px;
+    font-size: larger;
+}
+
+.ps {
+    position: relative;
+    font-size: larger;
+}
+
+.butn {
+    position: relative;
+    top: 50%;
+}
+
+.firstp {
+    width: 90%;
+    position: absolute;
+    top: 22rem;
+    left: 8%;
+    transform: translate(-2%, 50%);
+    animation: scrolled 2s linear;
+    font-size: 5rem;
+    display: grid;
+    justify-content: center;
+    /* font-family: Trattatello, fantasy; */
+}
+
+.secondp {
+    width: 100%;
+    height: 52rem;
+    background-image: url("https://img.freepik.com/free-photo/red-light-round-podium-black-background-mock-up_43614-950.jpg?size=626&ext=jpg&ga=GA1.1.1122068044.1720706765&semt=ais_hybrid");
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+
+.content {
+    font-size: 35px;
+    text-wrap: pretty;
+    width: 80%;
+    position: relative;
+    top: 50%;
+    color: blanchedalmond;
+}
+
+.secondp1 {
+    width: 100%;
+    height: 52rem;
+    background-image: url("https://img.freepik.com/free-photo/red-light-round-podium-black-background-mock-up_43614-950.jpg?size=626&ext=jpg&ga=GA1.1.1122068044.1720706765&semt=ais_hybrid");
+    background-size: cover;
+    color: white;
+}
+
+.firstp1 {
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230617/pngtree-modern-blue-networking-tech-wallpaper-with-golden-hexagons-in-3d-render-image_3618505.jpg");
+    width: 100%;
+    height: 52rem;
+    background-size: cover;
+    color: white;
+}
+
+.firstp1 {
+    animation-duration: 2s;
+    animation: slide;
+}
+
+@keyframes scrolled {
+    0% {
+        transform: none;
+        rotate: none;
+        transform: translate(1, 0) scale(1px, 0px);
+    }
+
+    50% {
+        transform: none;
+        rotate: none;
+        transform: translate(1px, 0px) scale(1px, 0px);
+    }
+
+    100% {
+        transform: none;
+        rotate: none;
+        transform: translate(1px, 0px) scale(1px, 0px);
+    }
+}
+
+header {
+    overflow: hidden;
+    height: 5rem;
+    position: relative;
+    top: -10rem;
+    left: -5%;
+}
+
+.sr {
+    animation: 5s ease-in-out infinite;
+    position: relative;
+    left: 35rem;
+    overflow: hidden;
+    font-size: 3rem;
+    color: wheat;
+    width: 14%;
+}
+
+@keyframes scrolling {
+
+    0%,
+    20% {
+        transform: translate(0px, -12.5em);
+    }
+
+    20%,
+    40% {
+        transform: translate(0px, -9.75em);
+    }
+
+    40%,
+    60% {
+        transform: translate(0px, -6.55em);
+    }
+
+    60%,
+    80% {
+        transform: translate(0px, -3.5em);
+    }
+
+    80%,
+    100% {
+        transform: translate(0px, -0.31em);
+    }
+
+    100%,
+    0% {
+        transform: translate(0px, -12.5em);
+    }
+}
+
+.thirdp {
+    font-size: 100px;
+    display: flex;
+    position: relative;
+    top: 50%;
+    justify-content: center;
+    animation: blinkd 1s ease-in-out infinite;
+}
+
+@keyframes blinkd {
+    0% {
+        transform: scale(0.3);
+    }
+
+    50% {
+        transform: scale(0.5);
+        color: aqua;
+    }
+
+    100% {
+        color: aqua;
+        transform: scale(1.0);
+    }
+}
